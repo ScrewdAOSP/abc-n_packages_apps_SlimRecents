@@ -1011,7 +1011,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
         if (mTasks != null && !mTasks.isEmpty()) {
             if (!mIsTopTaskInForeground) {
                 startApplication(mTasks.get(0));
-            } else if (mTasks.size() > 0) {
+            } else if (mTasks.size() > 1) {
                 startApplication(mTasks.get(1));
             }
         }
