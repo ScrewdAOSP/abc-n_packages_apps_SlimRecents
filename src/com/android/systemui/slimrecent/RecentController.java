@@ -726,6 +726,8 @@ public class RecentController implements RecentPanelView.OnExitListener,
                 mScaleFactor = scaleFactor;
                 rebuildRecentsScreen();
                 CacheController.getInstance(mContext, null).clearCache();
+                IconsHandler.getInstance(mContext).resetIconNormalizer();
+                ThumbnailsCacheController.getInstance(mContext).clearCache();
             }
 
             if (mRecentPanelView != null) {
