@@ -1376,7 +1376,7 @@ public class RecentPanelView {
             }
         }
         if (charSequence != null && lenghtInfo != null) {
-            return (charSequence + " - " + lenghtInfo).toString();
+            return (lenghtInfo + " | " + charSequence).toString();
         } else if (charSequence != null) {
             return charSequence.toString();
         }
